@@ -1,5 +1,9 @@
 # NYS Budget Analysis 2012 - 2013
 
+Deployable Streamlit App: 
+https://nybudgetkpi20122013.streamlit.app/
+---
+
 Welcome to the New York State Budget Analysis project! This project is aimed at providing insights into the budgetary expenses of each department and unit of government in New York State from 2010 to 2013. The data used in this project is obtained from the New York State Open Data Portal, and we have provided a detailed description of the columns in the dataset to help you understand the data better.
 
 This project is useful for anyone who is interested in understanding how the New York State government allocates its funds. It provides insights into which departments or units have the highest budgetary expenses, the most common types of expenses across all departments or units, and how the budget for each department or unit has changed over the years.
