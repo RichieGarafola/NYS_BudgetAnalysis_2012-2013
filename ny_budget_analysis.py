@@ -73,6 +73,7 @@ def plot_vertical_bar_chart(data, title, x_label, y_label):
     ax.set_xlabel(x_label)
     ax.set_ylabel(y_label)
     ax.set_title(title)
+    plt.xticks(rotation=90)
     st.pyplot(fig)
 
 def plot_pie_chart(df, col):
