@@ -110,6 +110,9 @@ if kpi_selection == 'Top 10 Departments or Units by Total Budgetary Expenses':
     
     # Plot a horizontal bar chart of the top 10 departments by total budgetary expenses
     plot_bar_chart(department_data, 'Top 10 Departments by Total Budgetary Expenses', 'Total Budgetary Expenses ($)', 'Department Name')
+    st.markdown("""
+    **Top 10 Departments or Units by Total Budgetary Expenses:** This KPI can be used to identify the departments or units that are receiving the highest amount of budgetary expenses. This information can be used to focus on cost-cutting measures in the departments or units that have the highest budgetary expenses.
+    """)
 
 elif kpi_selection == 'Top 10 Types of Expenses by Percentage of Total Budget':
     # Group the data by object and sum the total budgetary expenses for each object
@@ -123,6 +126,9 @@ elif kpi_selection == 'Top 10 Types of Expenses by Percentage of Total Budget':
     
     # Plot a horizontal bar chart of the top 10 objects by percentage of total budget
     plot_bar_chart(object_data_top_10, 'Top 10 Types of Expenses by Percentage of Total Budget', 'Percentage of Total Budget', 'Object Name')
+    st.markdown("""
+    **Top 10 Types of Expenses by Percentage of Total Budget:** This KPI can help to identify the types of expenses that consume the highest percentage of the budget. This information can be used to identify areas where budget cuts can be made or where there is a need to increase the budget allocation.
+    """)
 
 elif kpi_selection == 'Total Budget by Department':
     # Group the data by department and sum the total budgetary expenses for each department
@@ -130,6 +136,9 @@ elif kpi_selection == 'Total Budget by Department':
     
     # Plot a vertical bar chart of the total budget by department
     plot_vertical_bar_chart(department_data, 'Total Budget by Department', 'Department Name', 'Total Budgetary Expenses ($)')
+    st.markdown("""
+    **Total Budget by Department:** This KPI provides an overview of the total budget allocated to each department. It can be used to identify the departments that require the most resources and those that have been allocated a lower budget
+    """)
 
 elif kpi_selection == 'Mean Percentage Difference Between Estimated and Actual Budgets by Department':
     # Calculate the mean percentage difference between estimated and actual budgets for each department
@@ -138,6 +147,9 @@ elif kpi_selection == 'Mean Percentage Difference Between Estimated and Actual B
     
     # Plot a vertical bar chart of the mean percentage difference by department
     plot_vertical_bar_chart(department_data, 'Mean Percentage Difference Between Estimated and Actual Budgets by Department', 'Department Name', 'Mean Percentage Difference (%)')
+    st.markdown("""
+    **Mean Percentage Difference Between Estimated and Actual Budgets by Department:** This KPI can help to identify the departments that are over or underestimating their budget requirements. This information can be used to identify areas where budget planning needs to be improved or where budget allocation needs to be adjusted.
+    """)
 
 elif kpi_selection == 'Proportion of Budget by Object Code':
     # Group the data by object code and sum the total budgetary expenses for each object code
@@ -145,3 +157,6 @@ elif kpi_selection == 'Proportion of Budget by Object Code':
     
     # Plot a pie chart of the proportion of budget by object code
     plot_pie_chart(df, 'Object Code')
+    st.markdown("""
+    **Proportion of Budget by Object Code:** This KPI provides an overview of the proportion of the budget allocated to different types of expenses. It can be used to identify the areas where there is a need to increase or decrease budget allocation.
+    """)
